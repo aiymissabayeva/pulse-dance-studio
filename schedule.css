@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    background-color: #fff8f6;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.logo-text {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.navbar-nav {
+    gap: 25px;
+}
+
+.nav-link {
+    color: #222;
+    font-size: 15px;
+}
+
+.nav-link:hover {
+    color: #d46a7e;
+}
+
+.schedule-hero {
+    padding: 45px 0 20px;
+}
+
+.schedule-text {
+    position: relative;
+}
+
+.section-label {
+    color: #d46a7e;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.schedule-text h1 {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.schedule-text h1 span {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.schedule-description {
+    max-width: 380px;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.schedule-image {
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+}
+
+.schedule-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.schedule-section {
+    padding: 35px 0 70px;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.schedule-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.schedule-card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.beginners-title {
+    background-color: #efc6cd;
+}
+
+.intermediate-title {
+    background-color: #e7b1ba;
+}
+
+.advanced-title {
+    background-color: #d46a7e;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.schedule-table th {
+    font-weight: 600;
+    color: #555;
+    padding: 12px 7px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.schedule-table td {
+    padding: 12px 6px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.schedule-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.book-btn {
+    display: inline-block;
+    background-color: #e88998;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-size: 11px;
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background-color: #c85c70;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.footer {
+    padding: 30px 0;
+    border-top: 1px solid #ddd;
+    background-color: #fff8f6;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.footer p {
+    margin: 3px 0 0;
+    font-size: 12px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #222;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #d46a7e;
+}
+
+.copyright {
+    color: #777;
+}
+
+@media (max-width: 992px) {
+
+    .schedule-text {
+        margin-bottom: 35px;
+    }
+
+    .schedule-text h1 {
+        font-size: 50px;
+    }
+
+    .schedule-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .schedule-card {
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .schedule-hero {
+        padding: 35px 0 10px;
+    }
+
+    .schedule-text h1 {
+        font-size: 42px;
+    }
+
+    .schedule-description {
+        font-size: 14px;
+    }
+
+    .schedule-image {
+        height: 200px;
+    }
+
+    .schedule-section {
+        padding: 25px 0 50px;
+    }
+
+    .schedule-table {
+        font-size: 10px;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        padding: 9px 4px;
+    }
+
+    .book-btn {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
