@@ -39,9 +39,9 @@ The website includes five pages:
 
 This project was created as a group midterm project.
 
-- Aiym Issabayeva— Home and About pages
-- Zhannur Bakhyt— Classes and Schedule pages
-- Balnur Oraztay — Contact page and Responsive Design
+- Aiym Issabayeva - Home and About pages
+- Zhannur Bakhyt - Classes and Schedule pages
+- Balnur Oraztay - Contact page and Responsive Design
 
 ## Responsive Design
 
