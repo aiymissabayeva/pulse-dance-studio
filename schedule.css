@@ -73,9 +73,11 @@ body {
 }
 
 .schedule-image {
-    height: 230px;
+    width: 100%;
+    height: 350px;
     position: relative;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .schedule-image img {
