@@ -34,8 +34,8 @@ body {
     font-size: 15px;
 }
 
-.nav-link:hover,
-.nav-link.active {
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
     color: #d46a7e;
 }
 
