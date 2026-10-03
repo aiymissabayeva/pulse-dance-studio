@@ -38,11 +38,11 @@ body {
     color: #d46a7e;
 }
 
-.schedule-hero {
+.classes-hero {
     padding: 45px 0 20px;
 }
 
-.schedule-text {
+.classes-text {
     position: relative;
 }
 
@@ -53,26 +53,26 @@ body {
     margin-bottom: 10px;
 }
 
-.schedule-text h1 {
+.classes-text h1 {
     font-size: 58px;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 20px;
 }
 
-.schedule-text h1 span {
+.classes-text h1 span {
     font-style: italic;
     font-weight: 500;
 }
 
-.schedule-description {
+.classes-description {
     max-width: 380px;
     color: #666;
     font-size: 16px;
     line-height: 1.6;
 }
 
-.schedule-image {
+.classes-hero-image {
     width: 100%;
     height: 350px;
     position: relative;
@@ -80,90 +80,82 @@ body {
     border-radius: 20px;
 }
 
-.schedule-image img {
+.classes-hero-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.schedule-section {
+.classes-section {
     padding: 35px 0 70px;
 }
 
-.schedule-grid {
+.classes-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 18px;
 }
 
-.schedule-card {
+.class-card {
+    display: grid;
+    grid-template-columns: 45% 55%;
     background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
     border: 1px solid #eee;
+    overflow: hidden;
+    min-height: 180px;
+    border-radius: 20px;
+    transition: 0.3s;
 }
 
-.schedule-card-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 45px;
-    font-family: Georgia, serif;
-    font-size: 16px;
-    letter-spacing: 1px;
+.class-card:hover {
+    transform: translateY(-5px);
 }
 
-.beginners-title {
-    background-color: #efc6cd;
+.class-image {
+    height: 100%;
+    min-height: 180px;
 }
 
-.intermediate-title {
-    background-color: #e7b1ba;
-}
-
-.advanced-title {
-    background-color: #d46a7e;
-}
-
-.schedule-table {
+.class-image img {
     width: 100%;
-    border-collapse: collapse;
+    height: 100%;
+    object-fit: cover;
+}
+
+.class-info {
+    padding: 22px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.class-info h2 {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    margin: 0 0 10px;
+}
+
+.class-info p {
     font-size: 12px;
+    line-height: 1.5;
+    margin: 0 0 15px;
 }
 
-.schedule-table th {
-    font-weight: 600;
-    color: #555;
-    padding: 12px 7px;
-    border-bottom: 1px solid #eee;
-    text-align: center;
-}
-
-.schedule-table td {
-    padding: 12px 6px;
-    border-bottom: 1px solid #eee;
-    text-align: center;
-}
-
-.schedule-table tbody tr:last-child td {
-    border-bottom: none;
-}
-
-.book-btn {
+.class-btn {
     display: inline-block;
-    background-color: #e88998;
-    color: white;
+    width: fit-content;
+    border: 1px solid #d46a7e;
+    border-radius: 20px;
+    padding: 7px 15px;
+    color: #d46a7e;
     text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 7px;
     font-size: 11px;
     transition: 0.3s;
 }
 
-.book-btn:hover {
-    background-color: #c85c70;
+.class-btn:hover {
+    background-color: #d46a7e;
     color: white;
-    transform: translateY(-2px);
 }
 
 .footer {
@@ -207,20 +199,19 @@ body {
 }
 
 @media (max-width: 992px) {
-
-    .schedule-text {
+    .classes-text {
         margin-bottom: 35px;
     }
 
-    .schedule-text h1 {
+    .classes-text h1 {
         font-size: 50px;
     }
 
-    .schedule-grid {
+    .classes-grid {
         grid-template-columns: 1fr;
     }
 
-    .schedule-card {
+    .class-card {
         max-width: 700px;
         width: 100%;
         margin: 0 auto;
@@ -234,39 +225,37 @@ body {
 }
 
 @media (max-width: 576px) {
-
-    .schedule-hero {
+    .classes-hero {
         padding: 35px 0 10px;
     }
 
-    .schedule-text h1 {
+    .classes-text h1 {
         font-size: 42px;
     }
 
-    .schedule-description {
+    .classes-description {
         font-size: 14px;
     }
 
-    .schedule-image {
+    .classes-hero-image {
         height: 200px;
     }
 
-    .schedule-section {
+    .classes-section {
         padding: 25px 0 50px;
     }
 
-    .schedule-table {
-        font-size: 10px;
+    .class-card {
+        grid-template-columns: 1fr;
     }
 
-    .schedule-table th,
-    .schedule-table td {
-        padding: 9px 4px;
+    .class-image {
+        height: 220px;
+        min-height: 0;
     }
 
-    .book-btn {
-        padding: 4px 8px;
-        font-size: 10px;
+    .class-info {
+        padding: 20px;
     }
 
     .footer-links {
