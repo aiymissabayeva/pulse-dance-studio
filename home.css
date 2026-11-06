@@ -211,3 +211,23 @@ body {
         justify-content: center;
     }
 }
+
+.pulse-filter {
+    border: 1px solid #d46a7e;
+    background: white;
+    color: #b95065;
+    border-radius: 24px;
+    padding: 9px 19px;
+    cursor: pointer;
+}
+
+.pulse-filter.active,
+.pulse-filter:hover {
+    background: #d46a7e;
+    color: white;
+}
+
+.class-card a {
+    text-decoration: none;
+    color: inherit;
+}
