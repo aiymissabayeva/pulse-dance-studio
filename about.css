@@ -241,3 +241,22 @@ body {
     }
 
 }
+
+.trainer-toggle {
+    background: white;
+    color: #b95065;
+    border: 1px solid #d46a7e;
+    border-radius: 25px;
+    padding: 8px 20px;
+}
+
+.trainer-toggle:hover {
+    background: #d46a7e;
+    color: white;
+}
+
+.trainer-detail {
+    color: #666;
+    margin: 12px auto;
+    max-width: 270px;
+}
