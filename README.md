@@ -19,7 +19,7 @@ The website provides information about our dance studio, dance classes, instruct
 
 ## Website Pages
 
-**1. Home — index.html**
+**1. Home - index.html**
 
 The homepage introduces PULSE Dance Studio and displays available dance classes.
 
@@ -28,7 +28,7 @@ Endterm features:
 - Class filtering
 - DOM manipulation
 
-**2. About — about.html**
+**2. About - about.html**
 
 The About page introduces the dance studio and its instructors.
 
@@ -37,7 +37,7 @@ Endterm features:
 - Show and hide details
 - jQuery effects
 
-**3. Classes — classes.html**
+**3. Classes - classes.html**
 
 The Classes page provides information about different dance styles.
 
@@ -47,7 +47,7 @@ Endterm features:
 - Filter favorite classes
 - JavaScript event handling
 
-**4. Schedule — schedule.html**
+**4. Schedule - schedule.html**
 
 The Schedule page displays available dance classes and their schedules.
 
