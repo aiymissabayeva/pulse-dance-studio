@@ -207,6 +207,57 @@ body {
     color: #777;
 }
 
+.schedule-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+}
+
+.schedule-filter label {
+    color: #d46a7e;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.schedule-filter select {
+    max-width: 240px;
+    min-width: 180px;
+    padding: 10px 16px;
+    border: 1px solid #d46a7e;
+    border-radius: 25px;
+    background-color: #fff8f6;
+    color: #333;
+    cursor: pointer;
+}
+
+.schedule-filter select:focus {
+    border-color: #d46a7e;
+    box-shadow: 0 0 0 3px rgba(212, 106, 126, 0.15);
+    outline: none;
+}
+
+.schedule-card {
+    transition: opacity 0.25s ease;
+}
+
+.schedule-card[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 576px) {
+    .schedule-filter {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .schedule-filter select {
+        width: 100%;
+        max-width: 280px;
+    }
+}
 @media (max-width: 992px) {
 
     .schedule-text {

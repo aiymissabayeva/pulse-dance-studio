@@ -92,8 +92,18 @@
 
     <section class="schedule-section">
         <div class="container">
+            <div class="schedule-filter">
+            <label for="levelFilter">Filter by level:</label>
+
+            <select id="levelFilter" class="form-select">
+                <option value="all">All Levels</option>
+                <option value="beginners">Beginners</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+            </div>
             <div class="schedule-grid">
-                <div class="schedule-card">
+                <div class="schedule-card" data-level="beginners">
 
                     <div class="schedule-card-title beginners-title">
                         BEGINNERS
@@ -161,7 +171,7 @@
                 </div>
 
 
-                <div class="schedule-card">
+                <div class="schedule-card" data-level="intermediate">
                     <div class="schedule-card-title intermediate-title">
                         INTERMEDIATE
                     </div>
@@ -227,7 +237,7 @@
                 </div>
 
 
-                <div class="schedule-card">
+                <div class="schedule-card" data-level="advanced">
                     <div class="schedule-card-title advanced-title">
                         ADVANCED
                     </div>
@@ -249,7 +259,7 @@
                                     <td>Tue / Thu</td>
                                     <td>20:00</td>
                                     <td>
-                                        <a class="book-btn">
+                                        <a href="contact.html" class="book-btn">
                                             Book
                                         </a>
                                     </td>
@@ -328,7 +338,7 @@
             </div>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="schedule.js"></script>
 </body>
 </html>
