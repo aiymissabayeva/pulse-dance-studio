@@ -56,7 +56,7 @@ Endterm features:
 - Interactive selection
 - DOM manipulation
 
-**5. Contact — contact.html**
+**5. Contact - contact.html**
 
 The Contact page provides studio contact information and a contact form.
 
@@ -144,6 +144,6 @@ Web Technologies 1 (Front End)
 
 ## Project
 
-Endterm Project — PULSE Dance Studio
+Endterm Project - PULSE Dance Studio
 
 2026
