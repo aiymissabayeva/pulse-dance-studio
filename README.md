@@ -129,14 +129,17 @@ The following functionality should be tested before submission:
 - Classes page search and favorites
 - Schedule page level filtering
 - Contact form validation
+- Submit the contact form with empty fields to see validation errors
+- Enter an invalid email to test email validation
+- Fill in all fields correctly to see the success message
 - Responsive layout on different screen sizes
 - Navigation between all five pages
 
 ## Deployment
 
-Live Website: Add the deployed website URL here.
+Live Website: https://aiymissabayeva.github.io/pulse-dance-studio/
 
-GitHub Repository: Add the repository URL here.
+GitHub Repository: https://github.com/aiymissabayeva/pulse-dance-studio.git
 
 ## Course
 
