@@ -246,6 +246,51 @@ body {
 .schedule-card[hidden] {
     display: none !important;
 }
+.training-planner {
+    margin-top: 60px;
+    padding: 30px;
+    background: #f8f5f2;
+    border-radius: 12px;
+}
+
+.training-planner h2 {
+    margin-bottom: 10px;
+}
+
+#trainingForm {
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+#trainingSelect {
+    margin: 10px 0 20px;
+}
+
+#saveTrainingBtn {
+    border: none;
+    cursor: pointer;
+}
+
+#plannerMessage {
+    margin-top: 15px;
+}
+
+.training-item {
+    margin-top: 15px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.training-item h3 {
+    font-size: 20px;
+}
+
+.training-item button {
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+}
 
 @media (max-width: 576px) {
     .schedule-filter {

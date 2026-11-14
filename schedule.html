@@ -302,6 +302,19 @@
                     </div>
                 </div>
             </div>
+            <div class="training-planner">
+                <h2>My Training Plan</h2>
+                <p>Choose classes and create your personal training plan.</p>
+                <form id="trainingForm">
+                    <label for="trainingSelect">Choose a class:</label>
+                    <select id="trainingSelect" class="form-select" required>
+                        <option value="">Select a class</option>
+                    </select>
+                    <button type="submit" id="saveTrainingBtn" class="book-btn">Add to my plan</button>
+                </form>
+                <p id="plannerMessage" aria-live="polite"></p>
+                <div id="trainingList"></div>
+            </div>
         </div>
     </section>
 
@@ -340,5 +353,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="schedule.js"></script>
+    <script src="training-planner.js"></script>
 </body>
 </html>
