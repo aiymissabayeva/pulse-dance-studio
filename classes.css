@@ -316,3 +316,72 @@ body {
         justify-content: center;
     }
 }
+
+.classes-tools {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.classes-tools input {
+    height: 46px;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.classes-tools select {
+    -webkit-appearance: none;
+    appearance: none;
+
+    min-width: 160px;
+    height: 46px;
+    padding: 0 36px 0 18px;
+
+    background-color: white;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23d46a7e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+
+    border: 1px solid #e8c5cb;
+    border-radius: 30px;
+
+    color: #333;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.classes-tools select:hover {
+    border-color: #d46a7e;
+}
+
+.classes-tools select:focus-visible,
+.classes-tools input:focus-visible,
+.classes-tools button:focus-visible {
+    outline: 2px solid #d46a7e;
+    outline-offset: 2px;
+}
+
+.classes-tools button {
+    min-height: 46px;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+    .classes-tools {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .classes-tools input,
+    .classes-tools select,
+    .classes-tools button {
+        width: 100%;
+        min-width: 0;
+    }
+}

@@ -40,10 +40,11 @@ function updateClasses() {
         const className = card.querySelector("h2").textContent.trim();
         const matchesSearch = className.toLowerCase().includes(searchText);
         const matchesFavorites = !favoritesOnly || favoriteClasses.includes(className);
-        const shouldShow = matchesSearch && matchesFavorites;
+        const shouldShow = matchesSearch && matchesFavorites && matchesAdvancedFilters(card);
         card.style.display = shouldShow ? "" : "none";
         if (shouldShow) {visibleCount++;}
     });
+    sortClassCards();
     resultText.textContent = visibleCount + (visibleCount === 1 ? " class found" : " classes found");
 }
 
