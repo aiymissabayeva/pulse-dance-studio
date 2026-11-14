@@ -1,13 +1,7 @@
-const danceClasses = [
-    {name: "Hip-Hop", image: "images/hiphop.png"},
-    {name: "Contemporary", image: "images/contemporary.png"},
-    {name: "Heels", image: "images/highheels.png"},
-    {name: "Jazz Funk", image: "images/jazzfunk.png"},
-];
 const classGrid = document.getElementById("homeClassGrid");
 const classCount = document.getElementById("homeClassCount");
 function filterClasses(category) {
-  return category === "All" ? danceClasses : danceClasses.filter(item => item.name === category);
+  return danceClasses.filter(item => item.matchesCategory(category));
 }
 function renderClasses(items) {
   classGrid.replaceChildren();
@@ -19,7 +13,7 @@ function renderClasses(items) {
     const link = document.createElement("a");
     link.href = "classes.html";
     const image = document.createElement("img");
-    image.src = item.image; image.alt = item.name + " class";
+    image.src = item.image; image.alt = item.getImageAlt();
     const heading = document.createElement("h3"); heading.textContent = item.name;
     link.append(image, heading); card.append(link); column.append(card); classGrid.append(column);
   }
