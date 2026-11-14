@@ -2,16 +2,18 @@ const searchInput = document.getElementById("classSearch");
 const favoritesFilter = document.getElementById("favoritesFilter");
 const resultText = document.getElementById("classResult");
 const classCards = Array.from(document.querySelectorAll(".class-card"));
-const favoriteClasses = [];
+const favoriteClasses = JSON.parse(localStorage.getItem("favoriteClasses")) || [];
 
 classCards.forEach(card => {
     const className = card.querySelector("h2").textContent.trim();
     const favoriteButton = document.createElement("button");
+    const isFavorite = favoriteClasses.includes(className);
 
     favoriteButton.type = "button";
     favoriteButton.className = "favorite-btn";
-    favoriteButton.textContent = "Favorite";
-    favoriteButton.setAttribute("aria-pressed", "false");
+    favoriteButton.textContent = isFavorite? "Favorited": "Favorite";
+    favoriteButton.classList.toggle("active", isFavorite);
+    favoriteButton.setAttribute("aria-pressed", String(isFavorite));
     card.querySelector(".class-info").append(favoriteButton);
 
     favoriteButton.addEventListener("click", () => {
@@ -23,6 +25,7 @@ classCards.forEach(card => {
             favoriteClasses.splice(index, 1);
         }
         const isFavorite = favoriteClasses.includes(className);
+        localStorage.setItem("favoriteClasses", JSON.stringify(favoriteClasses))
         favoriteButton.classList.toggle("active", isFavorite);
         favoriteButton.textContent = isFavorite? "Favorited": "Favorite";
         favoriteButton.setAttribute("aria-pressed", String(isFavorite));
